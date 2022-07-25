@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+   
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" alt="" class="logo">
+            <nav> 
+                <ul id="menulist">
+                    <li><a href="">Game Controllers</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remotes</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" alt="" class="menu" onclick="togglemenu()">
+        </div>
+        <div class="row">
+           <div class="col1">
+            <h2>PS4 V2 <br> Dualshock 4</h2>
+            <h3>Wireless Controller for Playstation 4</h3>
+            <p>(Compatibale/Generic)</p>
+            <h4>$32.50</h4>
+            <button type="button">Buy Now <img src="images/arrow.png" alt=""></button>
+           </div>
+           <div class="col2">
+            <img src="images/controller.png" alt="" class="controller">
+            <div class="box"></div>
+            <div class="add" >
+                <img src="images/add.png" alt="">
+                <p><small>Add to Cart</small></p>
+            </div>
+            
+        </div>
+        </div>
+        <div class="social">
+
+            <img src="images/fb.png" alt="">
+            <img src="images/tw.png" alt="">
+            <img src="images/ig.png" alt="">
+
+        </div>
+
+    </div>
+    <script>
+        
+        var menuli=document.getElementById("menulist");
+        menuli.style.maxHeight="0px";
+        function togglemenu(){
+        if(menuli.style.maxHeight == "0px"){
+            menuli.style.maxHeight == "130px";
+            console.log("fguiyegfiu")
+        }
+        else{
+            menuli.style.maxHeight == "0px";
+        }
+    
+    }
+    </script>
+
+</body>
+</html>
