@@ -22,7 +22,7 @@
                     <li><a href="">Others</a></li>
                 </ul>
             </nav>
-            <img src="images/menu.png" alt="" class="menu" onclick="togglemenu()">
+            <img src="images/menu.png" alt="" class="menu" onclick="toggleMenu()">
         </div>
         <div class="row">
            <div class="col1">
@@ -51,21 +51,16 @@
         </div>
 
     </div>
-    <script>
-        
-        var menuli=document.getElementById("menulist");
-        menuli.style.maxHeight="0px";
-        function togglemenu(){
-        if(menuli.style.maxHeight == "0px"){
-            menuli.style.maxHeight == "130px";
-            console.log("fguiyegfiu")
-        }
-        else{
-            menuli.style.maxHeight == "0px";
-        }
     
-    }
+    <script>
+    function toggleMenu() {
+        var x = document.getElementById("menulist");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
     </script>
-
 </body>
 </html>
